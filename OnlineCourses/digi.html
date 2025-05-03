@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Class - Video Gallery</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Change to your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .video-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        /* Video Grid Layout */
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-item {
+            position: relative;
+            flex: 1 1 calc(25% - 10px); /* 4 videos per row */
+            margin: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 180px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .video-item.enlarged iframe {
+            width: 100%;
+            height: 500px;
+        }
+
+        .video-item.enlarged {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            width: 80%;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .video-item {
+                flex: 1 1 calc(50% - 10px); /* 2 videos per row for tablet */
+            }
+
+            .video-item iframe {
+                height: 150px;
+            }
+
+            .video-item.enlarged iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .video-item {
+                flex: 1 1 100%; /* 1 video per row for mobile */
+            }
+
+            .video-item iframe {
+                height: 120px;
+            }
+
+            .video-item.enlarged iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back button at top left -->
+    <a href="index.html" class="back-button">Back</a>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-white">Video Lectures Web Development</h1>
+
+        <!-- Video Grid -->
+        <div class="video-grid">
+            <!-- Video 1 -->
+            <div class="video-item" id="video-1">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_1]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-item" id="video-2">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_2]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-item" id="video-3">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_3]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-item" id="video-4">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_4]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-item" id="video-5">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_5]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="video-item" id="video-6">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_6]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 7 -->
+            <div class="video-item" id="video-7">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_7]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 8 -->
+            <div class="video-item" id="video-8">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_8]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 9 -->
+            <div class="video-item" id="video-9">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_9]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 10 -->
+            <div class="video-item" id="video-10">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_10]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 11 -->
+            <div class="video-item" id="video-11">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_11]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 12 -->
+            <div class="video-item" id="video-12">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_12]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 13 -->
+            <div class="video-item" id="video-13">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_13]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 14 -->
+            <div class="video-item" id="video-14">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_14]" allowfullscreen></iframe>
+            </div>
+
+            <!-- Video 15 -->
+            <div class="video-item" id="video-15">
+                <iframe src="https://www.youtube.com/embed/[VIDEO_ID_15]" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for functionality -->
+    <script>
+        function enlargeVideo(videoElement) {
+            // Reset any enlarged videos
+            document.querySelectorAll('.video-item').forEach(item => {
+                item.classList.remove('enlarged');
+            });
+
+            // Enlarge the selected video
+            videoElement.classList.add('enlarged');
+        }
+
+        // Add click event to enlarge video on click
+        document.querySelectorAll('.video-item').forEach(item => {
+            item.addEventListener('click', function() {
+                enlargeVideo(this);
+            });
+        });
+    </script>
+</body>
+</html>

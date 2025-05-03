@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 20 Digital Skills - LearnWithZia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/Favi.jpeg"> <!-- Sample favicon -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e7ebef;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header {
+            font-family: 'Lato', sans-serif;
+            background-color: #382893;
+            color: #fff;
+            padding: 20px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+            vertical-align: middle;
+            height: 30px; /* Adjust logo height as needed */
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-nav .nav-item.active .nav-link {
+            background-color: #573aaf;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background-color: #f0f4f8; /* Light gray background */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header {
+            background-color: #382893; /* Dark blue/purple header */
+            color: #fff; /* White text */
+            padding: 20px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .course-list {
+            margin-top: 40px;
+        }
+
+        .list-group-item {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #000000; /* Dark blue border */
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px; /* Add padding for better spacing */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            background-color: #ffffff; /* Background color */
+        }
+
+        .list-group-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(23, 0, 66, 0.2);
+            background-color: #ffffff; /* Light blue hover effect */
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .out-of-stock {
+            color: red;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #f8f9fa; /* Light gray footer */
+            padding: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer a {
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        footer a:hover {
+            color: #513e2b; /* Darker gray on hover */
+            text-decoration: underline;
+        }
+
+        .skill-image {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">LearnWithZia</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="course.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <div class="container course-list">
+        <h4 class="text-center mb-4">Explore the Top 20 Digital Skills</h4>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/digital-marketing.png" alt="Digital Marketing" class="skill-image">
+            Digital Marketing <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/web-design.png" alt="Web Development" class="skill-image">
+            Web Development <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/graphic-design.png" alt="Graphic Designing" class="skill-image">
+            Graphic Designing <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/seo.png" alt="SEO Optimization" class="skill-image">
+            SEO Optimization <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/content.png" alt="Content Creation" class="skill-image">
+            Content Creation <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/social-media.png" alt="Social Media Management" class="skill-image">
+            Social Media Management <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/data-analytics.png" alt="Data Analysis" class="skill-image">
+            Data Analysis <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/user-experience.png" alt="UX/UI Design" class="skill-image">
+            UX/UI Design <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/email-marketing.png" alt="Email Marketing" class="skill-image">
+            Email Marketing <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/mobile-development.png" alt="Mobile App Development" class="skill-image">
+            Mobile App Development <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/video-photography-multimedia/video-editing-icon.png" alt="Video Editing" class="skill-image">
+            Video Editing <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/cyber-security.png" alt="Cybersecurity" class="skill-image">
+            Cybersecurity <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://www.clipartmax.com/png/middle/160-1601511_blockchain-technology-icon-png.png" alt="Blockchain Technology" class="skill-image">
+            Blockchain Technology <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/cloud-computing.png" alt="Cloud Computing" class="skill-image">
+            Cloud Computing <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/e-commerce.png" alt="E-commerce" class="skill-image">
+            E-commerce <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/copywriting.png" alt="Copywriting" class="skill-image">
+            Copywriting <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/affiliate-marketing.png" alt="Affiliate Marketing" class="skill-image">
+            Affiliate Marketing <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/project-management.png" alt="Project Management" class="skill-image">
+            Project Management <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/virtual-reality.png" alt="Virtual Reality" class="skill-image">
+            Virtual Reality <span class="available">(Available)</span>
+          </li>
+          <li class="list-group-item">
+            <img src="https://img.icons8.com/color/96/000000/internet-of-things.png" alt="Internet of Things (IoT)" class="skill-image">
+            Internet of Things (IoT) <span class="available">(Available)</span>poi[uujh[]]
+          </li>
+        </ul>
+      </div>
+      
+    
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 LearnWithZia. All rights reserved.</p>
+            <p>Stay tuned for upcoming courses on these skills!</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

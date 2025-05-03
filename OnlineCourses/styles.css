@@ -1,0 +1,87 @@
+/* _______  google fonts    ________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+/* _______   custom property   ________*/
+:root{
+      /*typograph*/
+      --font-nunito: 'Nunito', sans-serif;
+
+      /*colors*/
+      --white-color:#fff;
+      --black-color:#1C2330;
+      --rose-color:#D16B64; 
+      --blue-color:#25A4C3;  
+      --blue-color2:#0882A5;
+
+      /*transition*/
+      --transition: all .4s ease-out;
+}
+
+
+/* _______   reset default   ________*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-nunito);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ---- switch : propriedades pra mudar de color----*/
+.switch{
+    --white-color:#1C2330;
+    --black-color:#fff;
+}
+/* _______  container    ________*/
+.container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+/* _______   navbar   ________*/
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;/*organizar horizontalmente*/
+    align-items: center; /*organizar verticalmente*/
+    padding: 20px 150px;
+    z-index: 222;
+}
+.nav-brand{
+    font-size: 30px;
+    color: var(--white-color);
+    font-weight: 900;
+    color: var(--black-color);
+}
+.nav-brand b{
+    color: var(--rose-color);
+}
+/* _______  navbar-list    ________*/
+.navbar-list{
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    margin-right: 100px;
+}
+.navbar-list .nav-item{
+    margin: 0 22px;
+}
+.navbar-list .nav-item .nav-link{
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1;
+    color: var(--black-color);
+    transition: var(--transition);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.navbar-list .nav-item:hover .nav-link{
+    color: var(--rose-color);
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LearnWithZia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/Favi.jpeg"> <!-- Sample favicon -->
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e7ebef;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header {
+            font-family: 'Lato', sans-serif;
+            background-color: #382893;
+            color: #fff;
+            padding: 20px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+            vertical-align: middle;
+            height: 30px; /* Adjust logo height as needed */
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-nav .nav-item.active .nav-link {
+            background-color: #573aaf;
+        }
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background-color: #f0f4f8; /* Light gray background */
+            color: #333; /* Dark gray text */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #382893; /* Dark blue/purple header */
+            color: #fff; /* White text */
+            padding: 20px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 40px;
+            background-color: #ffffff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .contact-section h2 {
+            color: #382893; /* Dark blue/purple heading */
+        }
+
+        .btn-primary {
+            background-color: #573aaf; /* Darker blue for button */
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #382893; /* Dark blue/purple on hover */
+            transform: translateY(-3px);
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f8f9fa; /* Light gray footer */
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header text-center">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">LearnWithZia</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="course.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="contact-section">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Type your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="text-center mt-5">
+            <h4>Follow Us on Social Media</h4>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="/images.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 LearnWithZia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

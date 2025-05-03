@@ -1,0 +1,58 @@
+LearnWithZia
+LearnWithZia is an online learning platform that offers a variety of free courses in subjects like programming, design, and digital marketing. The website is designed to help users enhance their skills through easily accessible resources.
+
+Table of Contents
+Features
+Technologies Used
+Installation
+Usage
+Contributing
+License
+Features
+Course Catalog: Explore a wide range of online courses.
+Search Functionality: Easily search for courses by keywords.
+Filters: Filter courses by category, level, and duration.
+Responsive Design: Optimized for both desktop and mobile devices.
+Frequently Asked Questions: Get answers to common queries.
+Technologies Used
+HTML5: For the structure of the website.
+CSS3: For styling the website, including animations.
+Bootstrap 4: For responsive design and UI components.
+JavaScript: For dynamic interactions and filtering functionality.
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/LearnWithZia.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd LearnWithZia
+Open index.html in your preferred web browser.
+
+Usage
+Upon opening the application, you will see the home page with the course catalog.
+Use the filter options on the left sidebar to narrow down courses based on category, level, and duration.
+Utilize the search bar to find specific courses.
+Click on any course to learn more about it or to enroll.
+Contributing
+We welcome contributions! If you'd like to contribute, please fork the repository and submit a pull request. Make sure to follow the code style and conventions.
+
+Fork the repository.
+Create a feature branch:
+bash
+Copy code
+git checkout -b feature/YourFeature
+Commit your changes:
+bash
+Copy code
+git commit -m "Add some feature"
+Push to the branch:
+bash
+Copy code
+git push origin feature/YourFeature
+Open a pull request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
